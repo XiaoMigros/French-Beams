@@ -1,5 +1,8 @@
 # French Beams
-A plugin for MuseScore 3 & 4 that creates French Beams. Apply to a selection of notes, or to the whole score. <br> Applying once will create French beams, running the plugin again will remove them.
+A plugin for MuseScore 3 & 4 that creates/removes French Beams.
+
+## Usage
+Select the notes of which you wish the beam length to change (or the whole score), and run the plugin. <br>Running once will create French beams, running the plugin again will remove them.
 
 ## Note for MuseScore 4 Users
 If you are using MuseScore 4 and your score has the 'Beam Distance' option set to 'Wide', you will need to set the 'useWideBeams' variable to true.
