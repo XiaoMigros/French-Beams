@@ -5,7 +5,7 @@ A plugin for MuseScore 3 & 4 that creates/removes French Beams.
 ![Before running the plugin](/examples/before.png)
 
 **After**
-![Before running the plugin](/examples/after.png)
+![After running the plugin](/examples/after.png)
 
 ## Changelog
 ### v2.0 (2023-09-06)
