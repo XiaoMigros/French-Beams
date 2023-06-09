@@ -1,6 +1,16 @@
 # French Beams
 A plugin for MuseScore 3 & 4 that creates/removes French Beams.
 
+**Before**
+![Before running the plugin](/examples/before.png)
+
+**After**
+![Before running the plugin](/examples/after.png)
+
+## Changelog
+### v2.0 (2023-09-06)
+- The plugin now accounts for surrounding notes when calculating the stem length, sizing stems on the edge of beams or sub-beams appropriately.
+
 ## Usage
 Select the notes of which you wish the beam length to change (or the whole score), and run the plugin. <br>Running once will create French beams, running the plugin again will remove them.
 
