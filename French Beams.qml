@@ -45,11 +45,11 @@ MuseScore {
 		for (var i in changeList) {
 			if (useContext) {
 				var cursor = curScore.newCursor()
-				cursor.rewindToTick(changeList[i][0].parent.tick)
 				for (var j = 0; j < curScore.nstaves; j++) {
 					for (var k = 0; k < 4; k++) {
 						cursor.staffIdx = j
 						cursor.voice = k
+						cursor.rewindToTick(changeList[i][0].parent.tick)
 						
 						if (cursor.element && cursor.element.is(changeList[i][0])) {
 							cursor.prev()
