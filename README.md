@@ -1,4 +1,4 @@
-# French Beams
+# [French Beams](https://musescore.org/en/project/french-beams)
 A plugin for MuseScore 3 & 4 that creates/removes French Beams.
 
 **Before**
