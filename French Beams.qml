@@ -26,7 +26,7 @@ MuseScore {
 	
 	onRun: {
 		var full = false
-		if (!curScore.selection.elements) {
+		if (!curScore.selection.elements.length) {
 			full = true
 			cmd('select-all')
 		}
@@ -65,14 +65,11 @@ MuseScore {
 			} else {
 				changeList[i][0].stem.userLen = changeList[i][1] ? frenchBeam(numberOfBeamAlterations(getDuration(changeList[i][0]))) : 0
 			}
-		}//for changelist
+		}//for changeList
 		
-		if (full) {
-			curScore.selection.clear()
-		}
+		if (full) curScore.selection.clear()
 		
 		curScore.endCmd()
-		
 		smartQuit()
 	}//onRun
 	
@@ -98,7 +95,7 @@ MuseScore {
 	}//frenchBeam
 	
 	function smartQuit() {
-		if (mscoreMajorVersion < 4) {Qt.quit()}
-		else {quit()}
+		if (mscoreMajorVersion < 4) Qt.quit()
+		else quit()
 	}//smartQuit
 }
